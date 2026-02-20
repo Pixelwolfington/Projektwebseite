@@ -51,6 +51,66 @@ a {
   pointer-events: none;
 }
 
+
+.hero-image-wrap {
+  margin-top: 2rem;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 18px 36px rgba(7, 26, 58, 0.25);
+  animation: fadeUp 850ms ease both;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+}
+
+.hero-image-wrap figcaption {
+  background: rgba(9, 33, 74, 0.85);
+  color: #eaf1ff;
+  padding: 0.55rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.subnav {
+  padding-top: 2.2rem;
+}
+
+.subnav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.subnav-grid a {
+  display: block;
+  background: #fff;
+  border: 1px solid #dbe8ff;
+  border-radius: 12px;
+  padding: 0.85rem 0.9rem;
+  box-shadow: 0 8px 20px rgba(20, 35, 59, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.subnav-grid a strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.subnav-grid a span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.subnav-grid a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(20, 35, 59, 0.12);
+  border-color: #bdd4ff;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
