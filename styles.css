@@ -1,6 +1,7 @@
 :root {
   color-scheme: light;
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+<<<<<<< codex/create-project-showcase-site-3nzr0d
   --bg: #f4f8ff;
   --bg-alt: #ecf3ff;
   --card: #ffffff;
@@ -9,6 +10,13 @@
   --dark: #14233b;
   --muted: #516074;
   --ring: rgba(43, 127, 255, 0.24);
+=======
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --accent: #1f6feb;
+  --dark: #16213e;
+  --muted: #5a6470;
+>>>>>>> main
 }
 
 * {
@@ -17,12 +25,17 @@
   padding: 0;
 }
 
+<<<<<<< codex/create-project-showcase-site-3nzr0d
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+=======
+body {
+  background: var(--bg);
+>>>>>>> main
   color: var(--dark);
   line-height: 1.6;
 }
@@ -33,6 +46,7 @@ a {
 }
 
 .hero {
+<<<<<<< codex/create-project-showcase-site-3nzr0d
   background: linear-gradient(120deg, #1866e8 0%, #5b9dff 55%, #65d6b8 100%);
   color: #fff;
   padding: 2.5rem 6vw 4rem;
@@ -49,6 +63,11 @@ a {
   border-radius: 999px;
   background: radial-gradient(circle, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0));
   pointer-events: none;
+=======
+  background: linear-gradient(120deg, #1f6feb 0%, #5c9dff 100%);
+  color: #fff;
+  padding: 2.5rem 6vw 4rem;
+>>>>>>> main
 }
 
 .nav {
@@ -65,6 +84,7 @@ a {
   font-weight: 500;
 }
 
+<<<<<<< codex/create-project-showcase-site-3nzr0d
 .nav a {
   position: relative;
 }
@@ -86,6 +106,8 @@ a {
   transform: scaleX(1);
 }
 
+=======
+>>>>>>> main
 .logo {
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -95,7 +117,10 @@ a {
 .hero-content {
   max-width: 620px;
   margin-top: 3rem;
+<<<<<<< codex/create-project-showcase-site-3nzr0d
   animation: fadeUp 700ms ease both;
+=======
+>>>>>>> main
 }
 
 .hero-content h1 {
@@ -111,7 +136,11 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.75rem;
+<<<<<<< codex/create-project-showcase-site-3nzr0d
   opacity: 0.85;
+=======
+  opacity: 0.8;
+>>>>>>> main
 }
 
 .button {
@@ -122,12 +151,15 @@ a {
   border-radius: 999px;
   font-weight: 600;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+<<<<<<< codex/create-project-showcase-site-3nzr0d
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 
 .button:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+=======
+>>>>>>> main
 }
 
 .section {
@@ -135,13 +167,20 @@ a {
 }
 
 .section.alt {
+<<<<<<< codex/create-project-showcase-site-3nzr0d
   background: linear-gradient(180deg, #ffffff 0%, var(--bg-alt) 100%);
+=======
+  background: #ffffff;
+>>>>>>> main
 }
 
 .section-header {
   max-width: 680px;
   margin-bottom: 2rem;
+<<<<<<< codex/create-project-showcase-site-3nzr0d
   animation: fadeUp 650ms ease both;
+=======
+>>>>>>> main
 }
 
 .section-header h2 {
@@ -159,6 +198,7 @@ a {
   background: var(--card);
   border-radius: 18px;
   overflow: hidden;
+<<<<<<< codex/create-project-showcase-site-3nzr0d
   border: 1px solid #e3ecff;
   box-shadow: 0 16px 38px rgba(15, 23, 42, 0.08);
   display: flex;
@@ -182,6 +222,15 @@ a {
 
 .card-image {
   background: linear-gradient(135deg, #d7e6ff, #eaf2ff 50%, #dbf7ef);
+=======
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  background: linear-gradient(135deg, #d7e6ff, #f5f7ff);
+>>>>>>> main
   height: 160px;
 }
 
@@ -204,6 +253,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+<<<<<<< codex/create-project-showcase-site-3nzr0d
 .info-grid > div {
   background: #fff;
   border: 1px solid #e0ebff;
@@ -213,6 +263,8 @@ a {
   animation: fadeUp 650ms ease both;
 }
 
+=======
+>>>>>>> main
 .info-grid ul,
 .info-grid ol {
   margin-top: 1rem;
@@ -229,6 +281,7 @@ a {
   gap: 1rem;
 }
 
+<<<<<<< codex/create-project-showcase-site-3nzr0d
 .footer a {
   color: #9fd8ff;
 }
@@ -247,6 +300,11 @@ a {
     opacity: 1;
     transform: translateY(0);
   }
+=======
+.footer-note {
+  font-size: 0.85rem;
+  opacity: 0.7;
+>>>>>>> main
 }
 
 @media (max-width: 720px) {
@@ -259,6 +317,7 @@ a {
     flex-wrap: wrap;
   }
 }
+<<<<<<< codex/create-project-showcase-site-3nzr0d
 
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -271,3 +330,5 @@ a {
     transition-duration: 1ms !important;
   }
 }
+=======
+>>>>>>> main
