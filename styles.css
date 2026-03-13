@@ -75,49 +75,6 @@ a {
   font-size: 0.9rem;
 }
 
-.subnav {
-  padding-top: 2.2rem;
-}
-
-.subnav-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.9rem;
-}
-
-.subnav-grid a {
-  display: block;
-  background: #fff;
-  border: 1px solid #dbe8ff;
-  border-radius: 12px;
-  padding: 0.85rem 0.9rem;
-  box-shadow: 0 8px 20px rgba(20, 35, 59, 0.06);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-  animation: slideInLeft 600ms ease both;
-}
-
-.subnav-grid a:nth-child(1) { animation-delay: 100ms; }
-.subnav-grid a:nth-child(2) { animation-delay: 200ms; }
-.subnav-grid a:nth-child(3) { animation-delay: 300ms; }
-.subnav-grid a:nth-child(4) { animation-delay: 400ms; }
-.subnav-grid a:nth-child(5) { animation-delay: 500ms; }
-.subnav-grid a:nth-child(6) { animation-delay: 600ms; }
-.subnav-grid a:nth-child(7) { animation-delay: 700ms; }
-.subnav-grid a:nth-child(8) { animation-delay: 800ms; }
-.subnav-grid a:nth-child(9) { animation-delay: 900ms; }
-.subnav-grid a:nth-child(10) { animation-delay: 1000ms; }
-
-.subnav-grid a span {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.subnav-grid a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 28px rgba(20, 35, 59, 0.12);
-  border-color: #bdd4ff;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -199,6 +156,10 @@ a {
 
 .section {
   padding: 3.5rem 6vw;
+}
+
+#projekte {
+  padding-top: 5rem;
 }
 
 .section.alt {
