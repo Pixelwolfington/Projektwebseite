@@ -213,5 +213,25 @@
       </div>
       <p class="footer-note">© 2026 OS Naters · Projektgalerie</p>
     </footer>
+
+    <!-- Easter Egg: Versteckter Text -->
+    <div id="easter-egg" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#d42626; color:#fff; padding:40px; border-radius:12px; font-size:28px; font-weight:bold; z-index:9999; text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+      Salü, ich hasse es hier 😤
+    </div>
+
+    <script>
+      let logoClicks = 0;
+      const logo = document.querySelector('.logo');
+      const easterEgg = document.getElementById('easter-egg');
+
+      logo.addEventListener('click', function() {
+        logoClicks++;
+        if (logoClicks === 5) {
+          easterEgg.style.display = 'block';
+          logoClicks = 0;
+          setTimeout(() => { easterEgg.style.display = 'none'; }, 3000);
+        }
+      });
+    </script>
   </body>
 </html>
