@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OS Naters – Schülerprojekte</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.min.css" />
   </head>
   <body>
     <header class="hero">
@@ -26,9 +26,20 @@
         </p>
         <a class="button" href="#projekte">Alle Projekte ansehen</a>
       </div>
+
+      <figure class="hero-image-wrap">
+        <img
+          class="hero-image"
+          src="image.png"
+          alt="OS Naters Schulhaus"
+          loading="lazy"
+        />
+        <figcaption>OS Naters – Schulhausansicht</figcaption>
+      </figure>
     </header>
 
     <main>
+
       <section id="projekte" class="section">
         <div class="section-header">
           <h2>Ausgewählte Projekte 2026</h2>
@@ -36,10 +47,15 @@
             Hier präsentieren die Klassen ihre aktuellen Arbeiten aus der Projektwoche.
             Fotos und Beschreibungen werden laufend ergänzt.
           </p>
+          <p>
+            Weitere Projekte folgen in Kürze: Diese Galerie wird fortlaufend erweitert,
+            sobald neue Klassenbeiträge mit Bildern, Kurzbeschreibungen und Ergebnissen
+            der Projektwoche eingereicht werden.
+          </p>
         </div>
 
         <div class="card-grid">
-          <article class="card">
+          <article id="projekt-robotik" class="card">
             <div class="card-image" aria-label="Foto des Projekts"></div>
             <div class="card-body">
               <h3>Robotik im Schulalltag</h3>
@@ -50,7 +66,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article id="projekt-kraeuter" class="card">
             <div class="card-image" aria-label="Foto des Projekts"></div>
             <div class="card-body">
               <h3>Alpenkräuter &amp; Naturprodukte</h3>
@@ -61,7 +77,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article id="projekt-film" class="card">
             <div class="card-image" aria-label="Foto des Projekts"></div>
             <div class="card-body">
               <h3>Filmprojekt: Unser Naters</h3>
@@ -72,7 +88,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article id="projekt-nachhaltig" class="card">
             <div class="card-image" aria-label="Foto des Projekts"></div>
             <div class="card-body">
               <h3>Nachhaltige Schulideen</h3>
@@ -83,7 +99,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article id="projekt-bruecke" class="card">
             <div class="card-image" aria-label="Foto des Projekts"></div>
             <div class="card-body">
               <h3>Brückenbau-Challenge</h3>
@@ -94,7 +110,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article id="projekt-podcast" class="card">
             <div class="card-image" aria-label="Foto des Projekts"></div>
             <div class="card-body">
               <h3>Schulpodcast 2026</h3>
@@ -104,10 +120,53 @@
               </p>
             </div>
           </article>
+
+          <article id="projekt-makerspace" class="card">
+            <div class="card-image" aria-label="Foto des Projekts"></div>
+            <div class="card-body">
+              <h3>MakerSpace: 3D-Druck</h3>
+              <p>
+                In der Technikwerkstatt entstanden Prototypen mit 3D-Druck, von der Idee
+                über das CAD-Modell bis zum fertigen Objekt.
+              </p>
+            </div>
+          </article>
+
+          <article id="projekt-schulgarten" class="card">
+            <div class="card-image" aria-label="Foto des Projekts"></div>
+            <div class="card-body">
+              <h3>Schulgarten 2026</h3>
+              <p>
+                Klassen planten Beete, dokumentierten das Pflanzenwachstum und entwickelten
+                ein Pflegekonzept für einen nachhaltigen Schulgarten.
+              </p>
+            </div>
+          </article>
+
+          <article id="projekt-mathe" class="card">
+            <div class="card-image" aria-label="Foto des Projekts"></div>
+            <div class="card-body">
+              <h3>Mathe &amp; Spieleentwicklung</h3>
+              <p>
+                Mathematikthemen wurden in kleine Lernspiele umgesetzt, damit Formeln,
+                Logik und Problemlösen spielerisch erlebbar werden.
+              </p>
+            </div>
+          </article>
+
+          <article id="projekt-geschichte" class="card">
+            <div class="card-image" aria-label="Foto des Projekts"></div>
+            <div class="card-body">
+              <h3>Geschichte als Ausstellung</h3>
+              <p>
+                Schülerinnen und Schüler kuratierten eine Mini-Ausstellung mit Zeitstrahl,
+                Plakaten und Interviews zu regionalen Geschichten aus dem Wallis.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
-<<<<<<< codex/create-project-showcase-site-3nzr0d
 
       <section id="team" class="section">
         <div class="section-header">
@@ -141,48 +200,6 @@
               <strong>GitHub Pages</strong> für das Hosting sowie Browser-Tests für die
               visuelle Kontrolle vor dem Livegang.
             </p>
-          </div>
-        </div>
-      </section>
-
-=======
->>>>>>> main
-      <section id="ueber" class="section alt">
-        <div class="section-header">
-          <h2>Über die Projektwoche</h2>
-          <p>
-            Die Projektwoche an der OS Naters bietet Raum für eigenständiges Arbeiten,
-            Teamwork und neue Lernformen. Auf dieser Seite zeigen wir die Ergebnisse.
-          </p>
-        </div>
-        <div class="info-grid">
-          <div>
-<<<<<<< codex/create-project-showcase-site-3nzr0d
-            <h3>Wie die Webseite gemacht wurde</h3>
-            <p>
-              Die Webseite wurde als statische Seite mit <strong>HTML</strong> und
-              <strong>CSS</strong> aufgebaut. Zuerst haben wir die Inhalte geplant
-              (Projekttexte, Struktur, Team-Abschnitt), danach das Design mit Farben,
-              Kartenlayout und Animationen umgesetzt. Anschliessend wurde alles mit
-              <strong>Git</strong> versioniert, auf <strong>GitHub</strong> hochgeladen
-              und über <strong>GitHub Pages</strong> veröffentlicht.
-            </p>
-=======
-            <h3>So nutzt ihr die Seite</h3>
-            <ul>
-              <li>Projektfotos in die Karten einsetzen.</li>
-              <li>Titel und Beschreibungen je Klasse laufend aktualisieren.</li>
-              <li>Kontaktinformationen bei Bedarf anpassen.</li>
-            </ul>
->>>>>>> main
-          </div>
-          <div>
-            <h3>GitHub Pages Status</h3>
-            <ol>
-              <li>Repository veröffentlicht und URL aktiv.</li>
-              <li>Änderungen werden nach jedem Push automatisch live.</li>
-              <li>Bei Bedarf Browser-Cache mit Hard-Reload aktualisieren.</li>
-            </ol>
           </div>
         </div>
       </section>
