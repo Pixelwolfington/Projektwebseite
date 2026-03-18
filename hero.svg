@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#87ceff"/>
+      <stop offset="1" stop-color="#d0e7ff"/>
+    </linearGradient>
+    <linearGradient id="bldg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0e0e0"/>
+      <stop offset="1" stop-color="#c4c4c4"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(0,0,0,0.15)"/>
+      <stop offset="1" stop-color="rgba(0,0,0,0)"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="400" fill="url(#sky)"/>
+  <rect x="80" y="120" width="1040" height="210" rx="12" ry="12" fill="url(#bldg)"/>
+  <rect x="80" y="260" width="1040" height="70" fill="#f8f8f8"/>
+  <rect x="500" y="220" width="200" height="110" fill="#d42626" rx="6" ry="6"/>
+
+  <g fill="#ffffff" opacity="0.8">
+    <rect x="120" y="140" width="140" height="40" rx="6" ry="6"/>
+    <rect x="290" y="140" width="140" height="40" rx="6" ry="6"/>
+    <rect x="460" y="140" width="140" height="40" rx="6" ry="6"/>
+    <rect x="630" y="140" width="140" height="40" rx="6" ry="6"/>
+    <rect x="800" y="140" width="140" height="40" rx="6" ry="6"/>
+
+    <rect x="120" y="200" width="140" height="40" rx="6" ry="6"/>
+    <rect x="290" y="200" width="140" height="40" rx="6" ry="6"/>
+    <rect x="460" y="200" width="140" height="40" rx="6" ry="6"/>
+    <rect x="630" y="200" width="140" height="40" rx="6" ry="6"/>
+    <rect x="800" y="200" width="140" height="40" rx="6" ry="6"/>
+  </g>
+
+  <rect x="0" y="330" width="1200" height="70" fill="url(#shadow)"/>
+
+  <text x="600" y="80" font-family="Segoe UI, sans-serif" font-size="50" fill="#ffffff" text-anchor="middle" font-weight="700">OS Naters</text>
+  <text x="600" y="118" font-family="Segoe UI, sans-serif" font-size="26" fill="#eef" text-anchor="middle">Schülerprojekte 2026</text>
+</svg>

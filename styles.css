@@ -75,42 +75,6 @@ a {
   font-size: 0.9rem;
 }
 
-.subnav {
-  padding-top: 2.2rem;
-}
-
-.subnav-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.9rem;
-}
-
-.subnav-grid a {
-  display: block;
-  background: #fff;
-  border: 1px solid #dbe8ff;
-  border-radius: 12px;
-  padding: 0.85rem 0.9rem;
-  box-shadow: 0 8px 20px rgba(20, 35, 59, 0.06);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-}
-
-.subnav-grid a strong {
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.subnav-grid a span {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.subnav-grid a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 28px rgba(20, 35, 59, 0.12);
-  border-color: #bdd4ff;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -194,6 +158,10 @@ a {
   padding: 3.5rem 6vw;
 }
 
+#projekte {
+  padding-top: 5rem;
+}
+
 .section.alt {
   background: linear-gradient(180deg, #ffffff 0%, var(--bg-alt) 100%);
 }
@@ -224,7 +192,7 @@ a {
   display: flex;
   flex-direction: column;
   transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
-  animation: fadeUp 700ms ease both;
+  animation: bounceIn 800ms ease both;
 }
 
 .card:nth-child(1) { animation-delay: 50ms; }
@@ -242,6 +210,7 @@ a {
   transform: translateY(-6px);
   box-shadow: 0 22px 45px rgba(15, 23, 42, 0.14);
   border-color: #cfe0ff;
+  animation: pulse 0.6s ease;
 }
 
 .card-image {
@@ -261,6 +230,18 @@ a {
 .card-body p {
   color: var(--muted);
 }
+
+/* Unterthemen für verschiedene Projekte */
+#projekt-robotik .card-image { background: linear-gradient(135deg, #d7e6ff, #eaf2ff 50%, #2b7fff); }
+#projekt-kraeuter .card-image { background: linear-gradient(135deg, #d7f7e6, #eafff2 50%, #45c4a1); }
+#projekt-film .card-image { background: linear-gradient(135deg, #ffe6d7, #fff2ea 50%, #ff7f2b); }
+#projekt-nachhaltig .card-image { background: linear-gradient(135deg, #e6ffd7, #f2ffea 50%, #7fff2b); }
+#projekt-bruecke .card-image { background: linear-gradient(135deg, #ffd7e6, #ffeaf2 50%, #ff2b7f); }
+#projekt-podcast .card-image { background: linear-gradient(135deg, #e6d7ff, #f2eaff 50%, #7f2bff); }
+#projekt-makerspace .card-image { background: linear-gradient(135deg, #fff7d7, #fffef2 50%, #ffc42b); }
+#projekt-schulgarten .card-image { background: linear-gradient(135deg, #d7ffe6, #eafff2 50%, #2bff7f); }
+#projekt-mathe .card-image { background: linear-gradient(135deg, #ffd7f7, #ffeaf7 50%, #ff2bc4); }
+#projekt-geschichte .card-image { background: linear-gradient(135deg, #f7d7ff, #fef2ff 50%, #c42bff); }
 
 .info-grid {
   display: grid;
@@ -310,6 +291,47 @@ a {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
