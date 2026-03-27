@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OS Naters – Schülerprojekte</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.min.css" />
   </head>
   <body>
     <header class="hero">
@@ -21,6 +22,7 @@
         <h1>Projektgalerie 2026</h1>
         <p>
           Stand: 27.03.2026 (Live-Update). Entdecke kreative Arbeiten aus den Klassen der OS Naters –
+          Stand: 13.02.2026. Entdecke kreative Arbeiten aus den Klassen der OS Naters –
           von Technik über Kunst bis zu Nachhaltigkeit. Jede Karte zeigt ein Projekt mit
           Bild und kurzer Beschreibung.
         </p>
@@ -32,6 +34,9 @@
           class="hero-image"
           src="images/os-naters-titelbild.svg" loading="eager" decoding="async"
           alt="Schulgebäude der OS Naters"
+          src="hero.svg"
+          alt="OS Naters Schulhaus"
+          loading="lazy"
         />
         <figcaption>OS Naters – Schulhausansicht</figcaption>
       </figure>
@@ -261,5 +266,27 @@
       </div>
       <p class="footer-note">© 2026 OS Naters · Projektgalerie · Letzte Aktualisierung: 27.03.2026</p>
     </footer>
+      <p class="footer-note">© 2026 OS Naters · Projektgalerie</p>
+    </footer>
+
+    <!-- Easter Egg: Versteckter Text -->
+    <div id="easter-egg" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#d42626; color:#fff; padding:40px; border-radius:12px; font-size:28px; font-weight:bold; z-index:9999; text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+      Salü, ich hasse es hier 😤
+    </div>
+
+    <script>
+      let logoClicks = 0;
+      const logo = document.querySelector('.logo');
+      const easterEgg = document.getElementById('easter-egg');
+
+      logo.addEventListener('click', function() {
+        logoClicks++;
+        if (logoClicks === 5) {
+          easterEgg.style.display = 'block';
+          logoClicks = 0;
+          setTimeout(() => { easterEgg.style.display = 'none'; }, 3000);
+        }
+      });
+    </script>
   </body>
 </html>
