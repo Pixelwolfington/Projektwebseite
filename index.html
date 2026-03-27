@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OS Naters – Schülerprojekte</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.min.css" />
   </head>
   <body>
     <header class="hero">
@@ -30,32 +30,15 @@
       <figure class="hero-image-wrap">
         <img
           class="hero-image"
-          src="images/os-naters-titelbild.svg" loading="eager" decoding="async"
-          alt="Schulgebäude der OS Naters"
+          src="hero.svg"
+          alt="OS Naters Schulhaus"
+          loading="lazy"
         />
         <figcaption>OS Naters – Schulhausansicht</figcaption>
       </figure>
     </header>
 
     <main>
-      <section class="subnav section" aria-label="Projekt-Untermenü">
-        <div class="section-header">
-          <h2>Untermenü Projekte</h2>
-          <p>Klicke auf ein Projekt, um direkt zur Karte mit Kurzbeschreibung zu springen.</p>
-        </div>
-        <div class="subnav-grid">
-          <a href="#projekt-robotik"><strong>Robotik im Schulalltag</strong><span>Roboter programmieren und im Schulhaus testen.</span></a>
-          <a href="#projekt-kraeuter"><strong>Alpenkräuter &amp; Naturprodukte</strong><span>Heimische Kräuter erforschen und Naturprodukte herstellen.</span></a>
-          <a href="#projekt-film"><strong>Filmprojekt: Unser Naters</strong><span>Kurzfilme mit Interviews und Alltagsthemen produzieren.</span></a>
-          <a href="#projekt-nachhaltig"><strong>Nachhaltige Schulideen</strong><span>Ideen für Energie, Begrünung und Abfallreduktion entwickeln.</span></a>
-          <a href="#projekt-bruecke"><strong>Brückenbau-Challenge</strong><span>Brückenmodelle bauen und Belastungstests durchführen.</span></a>
-          <a href="#projekt-podcast"><strong>Schulpodcast 2026</strong><span>Podcastfolgen mit Stimmen aus der Schulgemeinschaft aufnehmen.</span></a>
-          <a href="#projekt-makerspace"><strong>MakerSpace: 3D-Druck</strong><span>Prototypen als CAD-Modell und Druckobjekt umsetzen.</span></a>
-          <a href="#projekt-schulgarten"><strong>Schulgarten 2026</strong><span>Beete planen, Wachstum dokumentieren, Pflegekonzept erstellen.</span></a>
-          <a href="#projekt-mathe"><strong>Mathe &amp; Spieleentwicklung</strong><span>Lernspiele für Logik, Formeln und Problemlösen entwickeln.</span></a>
-          <a href="#projekt-geschichte"><strong>Geschichte als Ausstellung</strong><span>Mini-Ausstellung mit Zeitstrahl und Regionalinterviews kuratieren.</span></a>
-        </div>
-      </section>
 
       <section id="projekte" class="section">
         <div class="section-header">
@@ -220,37 +203,6 @@
           </div>
         </div>
       </section>
-
-      <section id="ueber" class="section alt">
-        <div class="section-header">
-          <h2>Über die Projektwoche</h2>
-          <p>
-            Die Projektwoche an der OS Naters bietet Raum für eigenständiges Arbeiten,
-            Teamwork und neue Lernformen. Auf dieser Seite zeigen wir die Ergebnisse.
-          </p>
-        </div>
-        <div class="info-grid">
-          <div>
-            <h3>Wie die Webseite gemacht wurde</h3>
-            <p>
-              Die Webseite wurde als statische Seite mit <strong>HTML</strong> und
-              <strong>CSS</strong> aufgebaut. Zuerst haben wir die Inhalte geplant
-              (Projekttexte, Struktur, Team-Abschnitt), danach das Design mit Farben,
-              Kartenlayout und Animationen umgesetzt. Anschliessend wurde alles mit
-              <strong>Git</strong> versioniert, auf <strong>GitHub</strong> hochgeladen
-              und über <strong>GitHub Pages</strong> veröffentlicht.
-            </p>
-          </div>
-          <div>
-            <h3>GitHub Pages Status</h3>
-            <ol>
-              <li>Repository veröffentlicht und URL aktiv.</li>
-              <li>Änderungen werden nach jedem Push automatisch live.</li>
-              <li>Bei Bedarf Browser-Cache mit Hard-Reload aktualisieren.</li>
-            </ol>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer id="kontakt" class="footer">
@@ -259,7 +211,27 @@
         <p>OS Naters · Projektausstellung 2026</p>
         <p>E-Mail: timo.mutter@schule-naters.ch</p>
       </div>
-      <p class="footer-note">© 2026 OS Naters · Projektgalerie · Letzte Aktualisierung: 27.03.2026</p>
+      <p class="footer-note">© 2026 OS Naters · Projektgalerie</p>
     </footer>
+
+    <!-- Easter Egg: Versteckter Text -->
+    <div id="easter-egg" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:#d42626; color:#fff; padding:40px; border-radius:12px; font-size:28px; font-weight:bold; z-index:9999; text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.3);">
+      Salü, ich hasse es hier 😤
+    </div>
+
+    <script>
+      let logoClicks = 0;
+      const logo = document.querySelector('.logo');
+      const easterEgg = document.getElementById('easter-egg');
+
+      logo.addEventListener('click', function() {
+        logoClicks++;
+        if (logoClicks === 5) {
+          easterEgg.style.display = 'block';
+          logoClicks = 0;
+          setTimeout(() => { easterEgg.style.display = 'none'; }, 3000);
+        }
+      });
+    </script>
   </body>
 </html>
