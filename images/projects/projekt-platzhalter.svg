@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t d">
   <title id="t">Projektbild Platzhalter</title>
-  <desc id="d">Platzhalterbild, bis Projektfoto hochgeladen wurde.</desc>
+  <desc id="d">Platzhalter für ein Projektfoto. Bitte durch eigenes Bild ersetzen.</desc>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#d7e6ff"/>
@@ -8,7 +8,7 @@
     </linearGradient>
   </defs>
   <rect width="800" height="500" fill="url(#g)"/>
-  <rect x="120" y="130" width="560" height="240" rx="18" fill="#ffffff" opacity="0.78"/>
-  <text x="400" y="250" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" fill="#1f355f">Projektfoto folgt</text>
-  <text x="400" y="295" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" fill="#2d4b7d">images/projects/dein-bild.jpg</text>
+  <rect x="120" y="120" width="560" height="260" rx="18" fill="#ffffff" opacity="0.72"/>
+  <text x="400" y="245" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" fill="#1f355f">Projektfoto einfügen</text>
+  <text x="400" y="290" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" fill="#2d4b7d">images/projects/dein-bild.jpg</text>
 </svg>
